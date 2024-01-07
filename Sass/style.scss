@@ -1,6 +1,10 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
-  background-color: #f5f5dc;
-  font-family: monospace;
+  background-color: #efefc8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contenedor{
@@ -11,26 +15,40 @@ body{
 
 .tarjeta{
   background-color: #ffffff;
+  box-shadow: 2px 2px 25px #000000cc;
   width: 320px;
-  border: 10px;
-  box-shadow: 2px 2px 15px #0000ffcc;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
 
   &-fondo{
     display: block;
     width: 100%;
+    height: 100px;
   }
 
   &-body{
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 1px solid #000000;
     
+    &-titulo{
+      margin: 0px;
+    }
+
+    &-texto{
+      text-align: justify;
+      margin: 0px;
+      padding: 10px;
+    }
+
     &-contenedor{
-      background-color: aqua;
-      border: 2px solid black;
+      background-color: #ff0000b0;
+      border: 2px solid #000000;
+      box-shadow: 0px -8px 25px #4949cecc;
       border-radius: 50%;
-      box-shadow: 0px -8px 20px #0000ffcc;
+      margin-top: calc(-50px - 20px);
 
       &-img{
         width: 200px;
@@ -40,13 +58,60 @@ body{
   &-footer{
      display: flex;
      justify-content: space-around;
+     margin-bottom: 5px;
 
      &-tipo{
       text-align: center;
+
+      &-texto{
+        background-color: #5A8BCE;
+        border: 1px solid #000000;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      &-texto2{
+        background-color: #535D64;
+        border: 1px solid #000000;
+        padding: 5px;
+        border-radius: 5px;
+      }
      }
 
      &-habilidad{
       text-align: center;
+
+      &-texto{
+        background-color: #dee2e8;
+        border: 1px solid #000000;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      &-texto2{
+        background-color: #dee2e8;
+        border: 1px solid #000000;
+        padding: 5px;
+        border-radius: 5px;
+      }
     }
+  }
+}
+
+.tarjeta-trasera{
+  color: #ffffff;
+  box-shadow: 2px 2px 25px #000000cc;
+  background-image: url(../Img/fondo.png);
+  width: 320px;
+  height: 500px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #fefefe;
   }
 }
