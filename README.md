@@ -1,1 +1,1 @@
-#Carta pokemon de greninja.
+Carta pokemon de greninja.
