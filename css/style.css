@@ -89,18 +89,47 @@ body {
 .tarjeta-trasera {
   color: #ffffff;
   box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.8);
-  background-image: url(../Img/fondo.png);
+  background: url(../Img/fondo.png) fixed;
   width: 320px;
   height: 500px;
   margin: 10px;
   border-radius: 10px;
   overflow: hidden;
 }
-.tarjeta-trasera-body {
+.tarjeta-trasera-fisica {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid #fefefe;
+  justify-content: space-evenly;
+  border-bottom: 1px solid;
+}
+.tarjeta-trasera-estadisticas {
+  padding-top: 25px;
+  padding-bottom: 55px;
+}
+.tarjeta-trasera-estadisticas h2 {
+  text-align: center;
+}
+.tarjeta-trasera-estadisticas-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.tarjeta-trasera-estadisticas-div-prog {
+  height: 20px;
+}
+.tarjeta-trasera-debilidades {
+  border-top: 1px solid;
+}
+.tarjeta-trasera-debilidades h2 {
+  margin: 5px;
+  text-align: center;
+}
+.tarjeta-trasera-debilidades-tipos {
+  display: flex;
+  justify-content: space-around;
+}
+.tarjeta-trasera-debilidades-tipos p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -101,17 +101,52 @@ body{
 .tarjeta-trasera{
   color: #ffffff;
   box-shadow: 2px 2px 25px #000000cc;
-  background-image: url(../Img/fondo.png);
+  background: url(../Img/fondo.png) fixed;
   width: 320px;
   height: 500px;
   margin: 10px;
   border-radius: 10px;
   overflow: hidden;
 
-  &-body{
+  &-fisica{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid #fefefe;
+    justify-content: space-evenly;
+    border-bottom: 1px solid ;
+  }
+
+  &-estadisticas{
+    padding-top: 25px;
+    padding-bottom: 55px;
+
+    h2{
+      text-align: center;
+    }
+
+    &-div{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+      &-prog{
+        height: 20px;
+      }
+    }
+  }
+
+  &-debilidades{
+    border-top: 1px solid ;
+    h2{
+      margin: 5px;
+      text-align: center;
+    }
+    &-tipos{
+      display: flex;
+      justify-content: space-around;
+
+      p{
+        text-align: center;
+      }
+    }
   }
 }
